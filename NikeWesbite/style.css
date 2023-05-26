@@ -1,0 +1,712 @@
+/* Default CSS */
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em;
+    min-height: 100vh;
+}
+
+/* NavTop */
+nav{
+    background-color: #111;
+    color: white;
+}
+.navtop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+}
+.navtop h3{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.limitedoffer{
+    border-bottom: 5px solid green;
+}
+
+ .search{
+    background-color:#DDDDDD;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 8vh;
+    border-radius: 10px;
+    /* border: 2px solid green; */
+}
+ .search input{
+    height:80%;
+    padding:2%;
+    background-color: transparent;
+    font-size: 15px;
+    /* border: 2px solid yellow;*/
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.search img{
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+    cursor:pointer;
+}
+.search input::placeholder{
+    color:black;
+    font-size:18px;
+}
+/* NavBottom */
+.navbottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbottom h3{
+    font-weight: 200;
+    margin:10px 50px;
+    cursor: pointer;
+}
+/* Header */
+.header-1{
+  display: flex;  
+  background:url('/black-brick-wall.jpg');
+  overflow: hidden;
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+.sliderWrapper{
+    width:500vw;
+    display: flex;
+    transition: all 1.5s ease-in-out;
+
+}
+.slider{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sliderimg{
+    /* position: absolute; */
+    z-index:1;
+}
+.slidertitle{
+  color: white;
+  position:absolute;
+  top:10%;
+  right: 10%;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 900;
+  z-index: 1;
+}
+.sliderPrice{
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid white;
+    z-index: 1;
+}
+.button-1{
+    /* z-index:; */
+    font-size: 2rem;
+    padding: 5px;
+    margin: 10px;
+    font-weight: 500;
+    border-style: none;
+    background:white;
+    color: black;
+    cursor: pointer;
+}
+/* .button-1:hover {
+    color: white;
+    inset: 1px;
+    background-color: black;
+} */
+.bgcolor{
+    width: 750px;
+    height: 700px;
+    position:absolute;
+    top:8%;
+    left:18%;
+    border-radius: 70%;
+    z-index: -1;
+}
+
+.slider:nth-child(1) .bgcolor{
+    background-color: yellowgreen;
+}
+
+.slider:nth-child(1) .sliderPrice{
+    color: yellowgreen;
+}
+.slider:nth-child(2) .bgcolor {
+    background-color: purple;
+}
+
+.slider:nth-child(2) .sliderPrice {
+    color: white;
+}
+
+.slider:nth-child(3) .bgcolor {
+    background-color: teal;
+}
+
+.slider:nth-child(3) .sliderPrice {
+    color: teal;
+}
+
+.slider:nth-child(4) .bgcolor {
+    background-color: gold;
+}
+
+.slider:nth-child(4) .sliderPrice {
+    color: gold;
+}
+.slider:nth-child(5) .bgcolor {
+    background-color: rosybrown;
+}
+
+.slider:nth-child(5) .sliderPrice {
+    color: rosybrown;
+}
+/* Features */
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+padding: 50px;
+/* border-bottom:1px solid yellow; */
+}
+.features{
+    width: 50%;
+    /* height: 100px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid green; */
+    margin:0px 30px;
+}
+.imgicon{
+    height: 50px;
+    width: 50px;
+    margin:20px;
+}
+.featuresTitle{
+    font-size: 19px;
+    font-weight: 800;
+    text-align: center;
+}
+.featuresDesc{
+    color: gray;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Product Details */
+.product{
+    background-color: whitesmoke;
+    clip-path: polygon(0 19%, 100% 0, 100% 100%, 0 100%);
+    position:relative;
+}
+.payment{
+    height: 500px;
+    width:500px;
+    background-color: white;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    display: none;
+    -webkit-box-shadow: 2px 0px 13px 2px rgba(222, 218, 222, 1);
+        -moz-box-shadow: 2px 0px 13px 2px rgba(222, 218, 222, 1);
+        box-shadow: 2px 0px 13px 2px rgba(222, 218, 222, 1);
+}
+.paymenttitle{
+   font-size:20px;
+   color: gray;
+   font-weight: 400;
+   padding: 10px;
+}
+.card{
+    margin:10px;
+}
+.cardinfo{
+    width: 100%;
+    display: flex;
+    margin-bottom:20px;
+}
+
+label{
+    font-size:15px;
+    display: flex;
+    padding:10px;
+    font-weight: 500;
+    color: gray;
+}
+
+.paymentinput{
+    height: 30px;
+    width: 95%;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding:10px;
+    margin:0px 10px;
+}
+.paymentbutton{
+    width: 100%;
+    height:8%;
+    position: absolute;
+    bottom:-40.1;
+    left:0;
+    background-color: green;
+    border:none;
+    color: white;
+    font-size: 19px;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+}
+
+.close{
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    color: white;
+    position:absolute;
+    top:10px;
+    right:10px;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.confirm{
+            height: 150px;
+            width: 500px;
+            background-color: white;
+            color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            text-align: center;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 2px;
+            -webkit-box-shadow: 2px 0px 13px 2px rgba(222, 218, 222, 1);
+            -moz-box-shadow: 2px 0px 13px 2px rgba(222, 218, 222, 1);
+            box-shadow: 2px 0px 13px 2px rgba(222, 218, 222, 1);
+}
+/* payment details  */
+/* product details */
+.productdetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+.productdes{
+    /* border: 5px solid green; */
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+flex-direction: column;
+width: max-content;
+margin-bottom: 30px;
+}
+.productimage{
+    width: 700;
+    height: 700;
+    cursor: pointer;
+}
+.productname{
+    font-size: 75px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.productprice{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.colors{
+    display: flex;
+    margin-bottom: 10px;
+}
+.color{
+     width: 32px;
+     height: 32px;
+     background-color: black;
+     margin:10px;
+     border-radius: 5px;
+    cursor: pointer;
+}
+.color:last-child{
+    background-color: darkblue;
+}
+.size{
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    padding: 10px;
+}
+.sizes{
+    width: max-content;
+    height: max-content;
+    margin: 5px;
+    border: 2px solid teal;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding:5px;
+    cursor: pointer;
+}
+.productd{
+    color: gray;
+    font-size: 15px;
+    margin-bottom:10px;
+}
+.productbutton{
+    position: absolute;
+    bottom:20%;
+    right: 5%;
+    padding:10px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1.7px;
+}
+.productbutton:hover{
+    color: white;
+    background-color: black;
+    /* border-style: none; */
+    cursor: pointer;
+}
+
+.shoetitle{
+    font-size: 20px;
+    /* color: darkgray; */
+    font-weight: 800;
+    background-color: grey;
+    letter-spacing: 2px;
+    padding:2px;
+    opacity: 0.7;
+}
+/* Gallery */
+.gallery{
+    display: flex;
+}
+.galleryitem{
+    flex:1;
+    padding:20px;
+    justify-content: center;
+    align-items: center;
+}
+.gallerytitle{
+    text-align: center;
+    padding: 20px 0px;
+}
+.galleryimg{
+    width: 100%;
+}
+
+.ns{
+    display: flex;
+    background-color: black;
+}
+.nsitem{
+    flex-grow:1;
+    padding:20px;
+}
+.nsimg{
+    width: 100%;
+}
+.nstitle{
+    color: white;
+    padding: 20px;
+    font-weight: 700;
+}
+.nsbutton{
+    padding: 5px;
+    margin-left: 20px;
+    width: 60%;
+    height: 50px;
+    font-size:18px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+/* Footer Design */
+.Footer{
+    display: flex;
+    background: whitesmoke;
+    /* border: 1px solid saddlebrown; */
+}
+.fup{
+    display: flex;
+    padding:70px;
+    flex:3;
+    justify-content: space-between;
+    align-items: center;
+}
+.fbottom{
+    flex:2;
+    /* border: 2px solid sienna; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.D{
+    margin-right: 10px;
+}
+.h-5{
+    font-size: 1.2rem;
+    margin:10px 20px;
+    /* padding: 20px; */
+    font-weight: 700;
+}
+ul{
+    margin:10px 20px;
+    /* padding:20px; */
+}
+li{
+    list-style: none;
+    padding: 5px;
+    font-size: 1.1rem;
+    color: grey;
+    cursor: pointer;
+}
+.inputB{
+    display: flex;
+    /* border: 2px solid sandybrown; */
+    margin: 5px 20px;
+    padding: 10px;
+}
+.input-2{
+    font-size: 1rem;
+    border: none;
+    margin-right: 5px;
+    outline: none;
+    background-color: transparent;
+    
+}
+.input-2::placeholder{
+    font-weight: 200;
+}
+.btn{
+    background:black;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 3px;
+    cursor: pointer;
+}
+.DH3{
+    font-size: 1rem;
+    margin: 10px 20px;
+}
+.D-2{
+    width: 30%;
+    display: flex;
+    margin: 5px 20px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.h-6{
+    color: grey;
+  margin:40px 20px;
+  font-weight: 400;
+}
+
+/* Media Queries */
+@media screen and (max-width:480px) {
+    .navtop h3{
+       padding:2px;
+       font-size: 1.1rem;
+       flex-wrap: wrap;
+    }
+    .search{
+        display: none;
+    }
+    .navbottom{
+        flex-wrap: wrap;
+    }
+    .navbottom h3{
+        font-size: 1.2rem;
+      margin:5px 5px;
+    }
+    .header-1{
+        clip-path: none;
+    }
+    .sliderWrapper{
+        position:relative;
+    }
+    .slider{
+        clip-path: none;
+        height: 75vh;
+        position: relative;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .sliderimg{
+        width: 95%;
+        height: 100%;
+        position: absolute;
+        left: 6%;
+        z-index:2;
+    }
+    .bgcolor{
+       width: 100vw;
+       height: 100%;
+       position: absolute;
+       left:0%;
+       z-index: 1;
+    }
+    .slidertitle{
+        display: none;
+    }
+    .sliderPrice{
+        position: absolute;
+        bottom:-1%;
+        top:unset;
+        color: black;
+        background-color: grey;
+        font-size: 40px;
+    }
+ .button-1{
+    z-index: 2;
+    position: absolute;
+    width: max-content;
+    font-size: 15px;
+    bottom: 0;
+    right: 10%;
+    background: black;
+    color: white;
+ }
+
+    .feature{
+        flex-direction: column;
+    }
+   .product{
+    clip-path: none;
+    background-color:whitesmoke;
+   }
+  
+  .productdetails{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+  .productimage{
+    width: 70%;
+    height: 70%;
+display: flex;
+justify-content: center;
+align-self: center;
+
+  }
+  .productname,.productprice,.sizes{
+    font-size: 20px;
+  }
+  .productbutton{
+    position: absolute;
+    bottom:0;
+  }
+  .size{
+    padding:25px;
+  }
+.shoetitle{
+    display: none;
+}
+.productd{
+  display: none;
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+}
+
+.ns{
+    flex-direction: column;
+}
+    .Footer{
+        flex-direction: column;
+    }
+    .fup{
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid green; */
+    }
+   
+    .fbottom{
+        flex-direction: column;
+    }
+
+/* nav buy button */
+.payment{
+    height: max-content;
+    width: 80%;
+    padding: 20px;
+}
+.imgicon {
+    margin: 2px 5px;
+}
+.paymenttitle{
+    font-size: 15px;
+}
+.card{
+    margin: 2px;
+}
+.cardinfo {
+    margin-bottom: 10px;
+}
+
+.paymentinput{
+    height: 20px;
+    width: 90%;
+}
+.paymentbutton{
+    position: absolute;
+    bottom: -28.1;
+    font-size: 15px;
+}
+.confirm {
+    height: 80px;
+    width:50%;
+    font-size:10px;
+    letter-spacing: 0;
+}
+ 
+.close{
+    width: 15px;
+    height: max-content;
+    font-size: 10px;
+} 
+}
